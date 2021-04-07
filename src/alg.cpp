@@ -26,10 +26,10 @@ int countPairs2(int *arr, int len, int value) {
   }
   len = right;
   for (int i = 0; i < len - 1; i++) {
-    for (int j = len; j > i; j++) {
+    for (int j = len; j > i; j--) {
       if (arr[i] + arr[j] == value) {
         counter++;
-      } 
+      }
       if (arr[i] + arr[j] > value) {
         break;
       }
